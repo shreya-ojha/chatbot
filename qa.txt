@@ -14,6 +14,7 @@ Developer	Can this be embedded anywhere?	Yes, the chatbot can be added to any we
 Developer	What API endpoints are available?	<b>/api/chatbot/categories</b> → Returns all categories<br><b>/api/chatbot/questions/&lt;category&gt;</b> → Returns questions<br><b>/api/chatbot/answer?q=</b> → Returns best answer.
 
 Media	How to show an image in chatbot?	You can display an image by adding this syntax in answer. The chatbot will automatically render the image preview.<br><code>:: /static/images/sample.png</code><br>
-Media	How to attach a PDF file?	You can attach PDF using:<br><code>:: /static/docs/manual.pdf</code><br>This will show a clickable link to open the PDF inside chatbot.
+Media	How to attach a PDF file?	You can attach PDF. This will show a clickable link to open the PDF inside chatbot.<br><code>:: /static/docs/manual.pdf</code><br>
 Media	How to show a clickable link?	You can show hyperlinks using regular HTML:<br><a href="https://example.com" target="_blank">Click here</a>
+
 
