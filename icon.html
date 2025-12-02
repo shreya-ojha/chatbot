@@ -1,0 +1,33 @@
+{% load static %}
+
+<head>
+  <!-- Chatbot call for CSS and JS -->
+<link rel="stylesheet" href="{% static 'css/bot.css' %}">
+<script src="{% static 'js/bot.js' %}"></script>
+
+<!-- chatbot code end -->
+
+</head>
+
+<!-- chatbot code start -->
+<div class="chatbot-container">
+  <button class="chatbot-toggle" onclick="toggleChatbot()">🤖</button>
+  <div class="chatbot-window" id="chatbotWindow">
+    <div class="chatbot-header">
+      Help Center
+      <button class="chatbot-close" onclick="toggleChatbot()">×</button>
+    </div>
+    <div class="chatbot-messages" id="chatbotMessages">
+      <div class="message bot-message">Hello! Please choose a category to begin.</div>
+      <div id="categoryButtons" style="display:flex; flex-wrap:wrap; gap:8px; margin-top:8px;"></div>
+      <div id="questionButtons" style="display:flex; flex-direction:column; gap:6px; margin-top:12px;"></div>
+    </div>
+    <div class="chatbot-input">
+      <input type="text" id="chatbotInput" placeholder="Type your question...">
+      <button onclick="sendChatbotMessage()">Send</button>
+    </div>
+  </div>
+</div>
+
+
+
