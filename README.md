@@ -71,7 +71,7 @@ project/
 │       └── bot.js      # Chatbot widget + API calls
 │
 ├── templates/
-│   └── base.html       # Chatbot widget injection snippet
+│   └── login.html       # Chatbot widget injection snippet
 │
 └── README.md
 ```
