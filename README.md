@@ -44,7 +44,7 @@ It then returns the closest matching answer.
 
 ---
 
-**⭐ Technology Stack  **
+**⭐ Technology Stack**
 
 | Component   | Technology           |
 |-------------|----------------------|
@@ -124,6 +124,7 @@ python manage.py runserver
 
 _Your backend endpoints are live now._
 
+
 **⭐ How to Edit FAQ Data _(qa.txt Format)_**
 The file uses tab-separated values:
 
@@ -134,6 +135,7 @@ General	How do I start?	Click <b>Begin</b> to start your journey.
 Help	Where is info?	Visit the Help menu.<br>More details available inside.
 
 _No restart needed — changes are picked up automatically._
+
 
 **⭐ How to Add the Chatbot UI to Any Web Page**
 Add these lines to your main HTML template:
@@ -152,6 +154,7 @@ Then add the widget:
 
 _That’s it — chatbot appears instantly._
 
+
 **⭐ Features at a Glance**
 
 ✔ Floating UI widget
@@ -162,6 +165,7 @@ _That’s it — chatbot appears instantly._
 ✔ Auto-refresh on FAQ updates
 ✔ No admin panel or database required
 ✔ Easy to embed anywhere
+
 
 **⭐ Future Enhancements**
 🔹 Add authentication for internal knowledgebases
