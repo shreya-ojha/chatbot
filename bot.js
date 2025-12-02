@@ -160,21 +160,10 @@ function appendMessage(text, isUser, showLabel = true) {
   box.scrollTop = box.scrollHeight;
 }
 
-/* Fullscreen image viewer */
-/*function openImagePopup(src) {
-  const existing = document.querySelector(".image-popup");
-  if (existing) existing.remove();
-  const popup = document.createElement("div");
-  popup.className = "image-popup";
-  const img = document.createElement("img");
-  img.src = src;
-  popup.appendChild(img);
-  popup.onclick = () => popup.remove();
-  document.body.appendChild(popup);
-}*/
 
 /* Expose helper to programmatically set category */
 window.setChatbotCategory = function(n) {
   const chip = document.querySelector(`#categoryButtons .category-chip[data-idx="${n}"]`);
   if (chip) chip.click();
 };
+
