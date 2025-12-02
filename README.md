@@ -17,13 +17,13 @@ Everything runs automatically using a simple `qa.txt` file — no database depen
 ### ⭐ What This Project Does
 This chatbot provides an interactive experience where users can:
 
-**🔹 Browse FAQs by Category** 
+**🔹 Browse FAQs by Category:** 
 Categories are shown dynamically and are loaded directly from `qa.txt`.
 
-**🔹 Select Questions** 
+**🔹 Select Questions:** 
 Each category reveals its own question list automatically.
 
-**🔹 Read Rich HTML Answers**
+**🔹 Read Rich HTML Answers:**
 Answers fully support:
 - Bold, italics  
 - Lists, tables  
@@ -33,7 +33,7 @@ Answers fully support:
 - PDF links  
 (Images intentionally excluded for open distribution)
 
-**🔹 Ask Free-Text Questions**
+**🔹 Ask Free-Text Questions:**
 NLP (RapidFuzz) allows the chatbot to understand:
 - Unclear queries  
 - Misspellings  
