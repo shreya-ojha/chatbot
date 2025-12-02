@@ -1,5 +1,4 @@
-🤖 Intelligent FAQ Chatbot  
-forthebadge forthebadge forthebadge forthebadge forthebadge forthebadge forthebadge  
+**🤖 Intelligent FAQ Chatbot**
 
 📌 **Introduction**  
 The **Intelligent FAQ Chatbot** is a lightweight, plug-and-play helpdesk assistant designed to instantly answer user queries through a structured FAQ dataset and NLP-based free-text search.  
@@ -61,17 +60,17 @@ It then returns the closest matching answer.
 project/
 │
 ├── chatbot/
-│ ├── views.py # API logic for categories, questions, answers
-│ ├── qa.txt # The FAQ dataset (tab-separated format)
+│       ├── views.py   _# API logic for categories, questions, answers_
+│       ├── qa.txt     _# The FAQ dataset (tab-separated format)_
 │
 ├── static/
-│ ├── css/
-│ │ └── bot.css # Chatbot UI styling
-│ └── js/
-│ └── bot.js # Chatbot widget + API calls
+│     ├── css/
+│          ├── bot.css  _# Chatbot UI styling_
+│     └── js/
+│          ├── bot.js  _# Chatbot widget + API calls_
 │
 ├── templates/
-│ └── base.html # Chatbot widget injection snippet
+│        ├── base.html  _# Chatbot widget injection snippet_
 │
 └── README.md
 
