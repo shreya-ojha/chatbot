@@ -55,8 +55,9 @@ It then returns the closest matching answer.
 
 ---
 
-**⭐ Project Structure Overview**
+## ⭐ Project Structure Overview
 
+```
 project/
 │
 ├── chatbot/
@@ -73,7 +74,8 @@ project/
 │   └── base.html       # Chatbot widget injection snippet
 │
 └── README.md
-
+```
+---
 
 **⭐ How the Chatbot Works (Architecture)**
 
@@ -136,28 +138,32 @@ Help	Where is info?	Visit the Help menu.<br>More details available inside.
 _No restart needed — changes are picked up automatically._
 
 
-**⭐ How to Add the Chatbot UI to Any Web Page**
+## ⭐ How to Add the Chatbot UI to Any Web Page
 
 Add these lines to your main HTML template:
 
+```html
 <link rel="stylesheet" href="{% static 'css/bot.css' %}">
 <script src="{% static 'js/bot.js' %}"></script>
+```
 
 Then add the widget:
 
+```html
 <div class="chatbot-container">
   <button class="chatbot-toggle" onclick="toggleChatbot()">🤖</button>
   <div class="chatbot-window" id="chatbotWindow">
       ...
   </div>
 </div>
+```
 
-_That’s it — chatbot appears instantly._
+That’s it — chatbot appears instantly.
 
-
-
+---
 **⭐ Features at a Glance**
 
+```
 ✔ Floating UI widget
 ✔ NLP free-text question matching
 ✔ HTML-styled answers
@@ -166,12 +172,14 @@ _That’s it — chatbot appears instantly._
 ✔ Auto-refresh on FAQ updates
 ✔ No admin panel or database required
 ✔ Easy to embed anywhere
+```
 
-
+---
 **⭐ Future Enhancements**
 
+```
 🔹 Add authentication for internal knowledgebases
 🔹 Save conversation history
 🔹 Provide suggestions while typing
 🔹 Enable multi-language support
-
+```
