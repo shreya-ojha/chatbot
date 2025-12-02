@@ -55,22 +55,22 @@ It then returns the closest matching answer.
 
 ---
 
-**⭐ Project Structure Overview** 
+**⭐ Project Structure Overview**
 
 project/
 │
 ├── chatbot/
-│       ├── views.py   _# API logic for categories, questions, answers_
-│       ├── qa.txt     _# The FAQ dataset (tab-separated format)_
+│   ├── views.py        # API logic for categories, questions, answers
+│   ├── qa.txt          # The FAQ dataset (tab-separated format)
 │
 ├── static/
-│     ├── css/
-│          ├── bot.css  _# Chatbot UI styling_
-│     └── js/
-│          ├── bot.js  _# Chatbot widget + API calls_
+│   ├── css/
+│   │   └── bot.css     # Chatbot UI styling
+│   └── js/
+│       └── bot.js      # Chatbot widget + API calls
 │
 ├── templates/
-│        ├── base.html  _# Chatbot widget injection snippet_
+│   └── base.html       # Chatbot widget injection snippet
 │
 └── README.md
 
@@ -137,6 +137,7 @@ _No restart needed — changes are picked up automatically._
 
 
 **⭐ How to Add the Chatbot UI to Any Web Page**
+
 Add these lines to your main HTML template:
 
 <link rel="stylesheet" href="{% static 'css/bot.css' %}">
@@ -154,6 +155,7 @@ Then add the widget:
 _That’s it — chatbot appears instantly._
 
 
+
 **⭐ Features at a Glance**
 
 ✔ Floating UI widget
@@ -167,7 +169,9 @@ _That’s it — chatbot appears instantly._
 
 
 **⭐ Future Enhancements**
+
 🔹 Add authentication for internal knowledgebases
 🔹 Save conversation history
 🔹 Provide suggestions while typing
 🔹 Enable multi-language support
+
