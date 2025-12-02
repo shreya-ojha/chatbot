@@ -1,6 +1,6 @@
-**🤖 Intelligent FAQ Chatbot**
+#### 🤖 Intelligent FAQ Chatbot
 
-📌 **Introduction**  
+### 📌 Introduction  
 The **Intelligent FAQ Chatbot** is a lightweight, plug-and-play helpdesk assistant designed to instantly answer user queries through a structured FAQ dataset and NLP-based free-text search.  
 It integrates seamlessly into any existing web application with a floating UI widget and a minimal Django backend.
 
@@ -14,16 +14,16 @@ Everything runs automatically using a simple `qa.txt` file — no database depen
 
 ---
 
-⭐ **What This Project Does**  
+### ⭐ What This Project Does
 This chatbot provides an interactive experience where users can:
 
-**🔹 Browse FAQs by Category**  
+## 🔹 Browse FAQs by Category 
 Categories are shown dynamically and are loaded directly from `qa.txt`.
 
-**🔹 Select Questions**  
+## 🔹 Select Questions  
 Each category reveals its own question list automatically.
 
-**🔹 Read Rich HTML Answers**  
+## 🔹 Read Rich HTML Answers  
 Answers fully support:
 - Bold, italics  
 - Lists, tables  
@@ -33,7 +33,7 @@ Answers fully support:
 - PDF links  
 (Images intentionally excluded for open distribution)
 
-**🔹 Ask Free-Text Questions** 
+## 🔹 Ask Free-Text Questions
 NLP (RapidFuzz) allows the chatbot to understand:
 - Unclear queries  
 - Misspellings  
@@ -43,7 +43,7 @@ It then returns the closest matching answer.
 
 ---
 
-**⭐ Technology Stack**
+### ⭐ Technology Stack
 
 | Component   | Technology           |
 |-------------|----------------------|
@@ -55,7 +55,7 @@ It then returns the closest matching answer.
 
 ---
 
-## ⭐ Project Structure Overview
+### ⭐ Project Structure Overview
 
 ```
 project/
@@ -77,14 +77,14 @@ project/
 ```
 ---
 
-**⭐ How the Chatbot Works (Architecture)**
+### ⭐ How the Chatbot Works (Architecture)
 
-**1️⃣ FAQ Loader**
+## 1️⃣ FAQ Loader
 The backend reads `qa.txt` and organizes it as:
 - **categories → questions → answers**
 - **flat dictionary for NLP**
 
-**2️⃣ REST-like Endpoints**
+## 2️⃣ REST-like Endpoints
 The chatbot exposes three main APIs:
 
 |             Endpoint                 |               Purpose                 |
@@ -93,7 +93,7 @@ The chatbot exposes three main APIs:
 | `/api/chatbot/questions/<category>/` | Returns questions for that category   |
 | `/api/chatbot/answer/?q=...`         | Returns matched answer (exact or NLP) |
 
-**3️⃣ Frontend Widget**
+## 3️⃣ Frontend Widget
 The floating widget:
 - Displays messages  
 - Loads categories/questions  
@@ -102,31 +102,31 @@ The floating widget:
 
 ---
 
-**⭐ How to Run Locally**  
+### ⭐ How to Run Locally
 
-**1️⃣ Clone the Project**
+## 1️⃣ Clone the Project
 
 git clone <your-repo-url>
 cd chatbot-project
 
-**2️⃣ Create & Activate Virtual Environment**
+## 2️⃣ Create & Activate Virtual Environment
 
 python -m venv venv
 venv\Scripts\activate      # Windows
 source venv/bin/activate   # Mac/Linux
 
-**3️⃣ Install Dependencies**
+## 3️⃣ Install Dependencies
 
 pip install -r requirements.txt
 
-**4️⃣ Run the Server**
+## 4️⃣ Run the Server
 
 python manage.py runserver
 
 _Your backend endpoints are live now._
 
 
-**⭐ How to Edit FAQ Data _(qa.txt Format)_**
+### ⭐ How to Edit FAQ Data _(qa.txt Format)_
 The file uses tab-separated values:
 
 Category<TAB>Question<TAB>Answer (HTML allowed)
@@ -138,7 +138,7 @@ Help	Where is info?	Visit the Help menu.<br>More details available inside.
 _No restart needed — changes are picked up automatically._
 
 
-## ⭐ How to Add the Chatbot UI to Any Web Page
+### ⭐ How to Add the Chatbot UI to Any Web Page
 
 Add these lines to your main HTML template:
 
@@ -161,7 +161,7 @@ Then add the widget:
 That’s it — chatbot appears instantly.
 
 ---
-**⭐ Features at a Glance**
+### ⭐ Features at a Glance
 
 ```
 ✔ Floating UI widget
@@ -175,7 +175,7 @@ That’s it — chatbot appears instantly.
 ```
 
 ---
-**⭐ Future Enhancements**
+### ⭐ Future Enhancements
 
 ```
 🔹 Add authentication for internal knowledgebases
