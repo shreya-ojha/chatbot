@@ -13,8 +13,9 @@ Setup	How do I add a new category?	Just add a new line in <code>qa.txt</code> wi
 Developer	Can this be embedded anywhere?	Yes, the chatbot can be added to any web page by including:<br><code>&lt;link rel="stylesheet" ... &gt;</code><br><code>&lt;script src="bot.js"&gt;&lt;/script&gt;</code>
 Developer	What API endpoints are available?	<b>/api/chatbot/categories</b> → Returns all categories<br><b>/api/chatbot/questions/&lt;category&gt;</b> → Returns questions<br><b>/api/chatbot/answer?q=</b> → Returns best answer.
 
-Media	How to show an image in chatbot?	You can display an image by adding this syntax in answer. The chatbot will automatically render the image preview.<br><code>:: /static/images/sample.png</code><br>
-Media	How to attach a PDF file?	You can attach PDF. This will show a clickable link to open the PDF inside chatbot.<br><code>:: /static/docs/manual.pdf</code><br>
+Media	How to show an image in chatbot?	You can display an image by adding this syntax in answer. The chatbot will automatically render the image preview.:: /static/images/sample.png
+Media	How to attach a PDF file?	You can attach PDF. This will show a clickable link to open the PDF inside chatbot.:: /static/docs/manual.pdf
 Media	How to show a clickable link?	You can show hyperlinks using regular HTML:<br><a href="https://example.com" target="_blank">Click here</a>
+
 
 
