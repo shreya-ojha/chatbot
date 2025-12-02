@@ -1,4 +1,4 @@
-#### 🤖 Intelligent FAQ Chatbot
+### 🤖 Intelligent FAQ Chatbot
 
 ### 📌 Introduction  
 The **Intelligent FAQ Chatbot** is a lightweight, plug-and-play helpdesk assistant designed to instantly answer user queries through a structured FAQ dataset and NLP-based free-text search.  
